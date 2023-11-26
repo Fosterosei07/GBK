@@ -1,0 +1,108 @@
+/* .search{
+    display: inline-flex;
+    align-items: center;
+    background-image: linear-gradient(45deg, #c0d2ee,#18e0b5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    /* width: 5cm; */
+
+/* .imgs{
+    width: 1cm;
+    height: 5vh;
+    margin-left: 120px;
+} */
+/* .search :is(input, button){
+    background: transparent;
+    color: inherit;
+    border: none;
+    outline: none;
+}
+.search_input{
+    width: 0;
+    transition: width 0.5s;
+}
+.search_button{
+    display: grid;
+    place-items: center;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: color 0.25;
+}
+.search:focus-width input{
+    width: 20px;
+}  */
+
+/* START SIMPLE HOVER DROP-DOWN  */
+.dropbtn{
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: .5em;
+    width: 3cm;
+    height: 3em;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.dropdown-content a {
+    display: block;
+    text-decoration: none;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    transition:  0.5s;
+}
+/* END OF SIMPLE HOVER DROP-DOWN  */
+
+/* START SIMPLE VERIFICATION  */
+input{
+    outline: none;
+    padding: 1-px;
+    font-size: 16px;
+    border: solid 2px #111;
+    border-radius: .5em;
+}
+.input:invalid{
+    border:  2px solid #e70707;
+    animation: invalid 0.5s 2;
+}
+@keyframes invalid {
+    25%{
+        transition: 6px 0;
+    }
+    50%{
+        transition: -6px 0;
+    }
+    75%{
+        transition: 6px 0;
+    }
+    100%{
+        transition: 6px 0;
+    }
+}
+.span :hover{
+    transition:  0.5s;
+   
+}
+.btn{
+    width: 3cm;
+    height: 5vh;
+    background-color: #111;
+    outline: none;
+    border-radius: .5em;
+    border: none;
+    color: white;
+}
+textarea {
+    background-color: #450345;
+    color: white;
+    font-family: sans-serif;
+    font-feature-settings: "fwid";
+}
